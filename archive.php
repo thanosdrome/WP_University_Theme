@@ -23,7 +23,7 @@
       <div class="post-item">
         <h2 class="headline healing--medium headline--post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
         <div class="metabox">         
-          <p>Posted By <?php the_author_posts_link( );?>  on <?php the_time( 'n.j.y' );?> in <?php echo get_the_category_list(', '); ?><p>
+          <p>Posted By <?php the_author_posts_link();?>  on <?php the_time( 'n.j.y' );?> in <?php echo get_the_category_list(', '); ?><p>
         </div>
         <div>
           <?php  the_excerpt( )?>
