@@ -19,3 +19,14 @@ function university_features(){
 }
 
 add_action('after_setup_theme', 'university_features');
+
+function uni_custom_logo_setup() {
+    add_theme_support('custom-logo', array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array('site-title', 'site-description'),
+    ));
+}
+add_action('after_setup_theme', 'uni_custom_logo_setup');
